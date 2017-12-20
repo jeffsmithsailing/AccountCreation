@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)file:///C:/Users/Jeff/Desktop/premera_account/index.html?# -->
+<html class="mdc-typography"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Account Creation</title>
+ <link rel="stylesheet" href="./Account Creation_files/material-components-web.min.css"> <!-- This version pulls the latest but there is a bug from Google -->
+	  
+	 <!-- <link
+      rel="stylesheet"
+      href="https://unpkg.com/material-components-web@0.24.0/dist/material-components-web.min.css"> -->
+	  
+	 <style>
+	  :root { --mdc-theme-primary: #dd6162;
+ 			}
+	  </style> 
+	  <!-- following stylesheet is an override to the base GMD styles called out above -->
+	<!-- <link href="file:///C|/Users/Jeff/GMDDemos/AccountCreate/WebAgilityVersion/premerastylesplaceholder.css" rel="stylesheet" type="text/css"> -->
+	  <link rel="stylesheet" href="./Account Creation_files/premsass.css" type="text/css">
+
+  </head>
+	<body>
+		<div id="colorstrip"> <!-- adding the color bar across the top of the page -->
+		
+		<img src="./Account Creation_files/logo_pbc.svg" alt="Premera logo" width="221" height="60">
+	
+		
+	  <main>
+		  <!-- added card structure here -->
+		<div class="mdc-card">
+  					
+<!-- End of card structure -->
+		  
+		  <!-- Following line is the GMD standard - we are overriding the color and height of h1 -->
+   		<!-- <h1 class="mdc-typography--display1">Create your account</h1> -->
+		  <h1>Create your account</h1>
+	  <h4>Let's start with your email and the name associated with your account.</h4>
+	  <form action="file:///C:/Users/Jeff/Desktop/premera_account/index.html?#" id="accountcreate-form">
+	  	
+		  <div class="left-side"> <!-- this is the starting div for the form -->
+			  <p>
+			</p><div class="mdc-form-field"> <!-- would like to make this a full width text field but the code from google is not working -->
+				<div class="mdc-text-field mdc-text-field--upgraded" data-mdc-auto-init="MDCTextField">
+			  		<input id="email" type="text" class="mdc-text-field__input">
+					<label for="email" class="mdc-text-field__label">
+						Email
+					</label>
+			  		<div class="mdc-text-field__bottom-line"></div>
+		    	</div>
+			</div>
+			<p></p>
+			
+			
+		  <div class="mdc-form-field">
+			<div class="mdc-text-field mdc-text-field--upgraded" data-mdc-auto-init="MDCTextField">
+			  <input id="firstname" type="text" class="mdc-text-field__input">
+				<label for="firstname" class="mdc-text-field__label">
+				First name
+				</label>
+			  <div class="mdc-text-field__bottom-line"></div>
+		    </div>
+		  </div>
+		  
+			<div class="mdc-form-field">
+				<div class="mdc-text-field mdc-text-field--upgraded" data-mdc-auto-init="MDCTextField">
+					<input id="lastname" type="text" class="mdc-text-field__input">
+					<label for="lastname" class="mdc-text-field__label">
+					   Last name
+					</label>
+					<div class="mdc-text-field__bottom-line"></div>
+		 		 </div>
+			</div>
+			
+			 <p>
+			
+			</p><div class="mdc-form-field">
+				<div class="mdc-text-field mdc-text-field--upgraded" data-mdc-auto-init="MDCTextField">
+			  		<input id="password" type="text" class="mdc-text-field__input">
+					<label for="password" class="mdc-text-field__label">
+						Password
+					</label>
+			  		<div class="mdc-text-field__bottom-line"></div>
+		    	</div>
+			</div>
+			
+		  
+			<div class="mdc-form-field">
+				<div class="mdc-text-field mdc-text-field--upgraded" data-mdc-auto-init="MDCTextField">
+			  		<input id="PWconfirm" type="text" class="mdc-text-field__input">
+					<label for="PWconfirm" class="mdc-text-field__label">
+						Re-enter password
+					</label>
+			  		<div class="mdc-text-field__bottom-line"></div>
+		    	</div>
+			</div>
+			
+			 <p></p>
+			
+		 <p>
+			
+			</p><div class="mdc-form-field">
+				<div class="mdc-text-field mdc-text-field--upgraded" data-mdc-auto-init="MDCTextField">
+			  		<input id="birthdate" type="text" class="mdc-text-field__input">
+					<label for="birthdate" class="mdc-text-field__label">
+						Birth date
+					</label>
+			  		<div class="mdc-text-field__bottom-line"></div>
+		    	</div>
+			</div>
+			
+			<div class="mdc-form-field">
+				<div class="mdc-text-field mdc-text-field--upgraded" data-mdc-auto-init="MDCTextField">
+			  		<input id="mobilephone" type="text" class="mdc-text-field__input">
+					<label for="mobilephone" class="mdc-text-field__label">
+						Mobile phone
+					</label>
+			  		<div class="mdc-text-field__bottom-line"></div>
+		    	
+			<!--	<p class="mdc-textfield-helptext mdc-textfield-helptext--persistent">
+				Optional
+				</p> removed this help text as it appeared next to the field instead of below it -->
+				</div>
+			</div>
+			 <p></p>
+			<p>		
+			</p><div class="mdc-form-field">
+				<div class="mdc-text-field mdc-text-field--upgraded" data-mdc-auto-init="MDCTextField">
+			  		<input id="zipcode" type="text" class="mdc-text-field__input">
+					<label for="zipcode" class="mdc-text-field__label">
+						ZIP code
+					</label>
+			  		<div class="mdc-text-field__bottom-line"></div>
+		    	</div>
+			</div>
+			<p></p>	
+		
+			<!-- Google select with mdc activation -->
+			<p>
+			
+			</p><div class="mdc-select" role="listbox" tabindex="0" data-mdc-auto-init="MDCSelect" style="width: 337px;">
+ 				 <span class="mdc-select__selected-text">Security question 1</span>
+ 				 <div class="mdc-simple-menu mdc-select__menu">
+    				<ul class="mdc-list mdc-simple-menu__items">
+      					<li class="mdc-list-item" role="option" id="default1" aria-disabled="true">
+        					Security question 1
+      					</li>
+      					<li class="mdc-list-item" role="option" id="gfshoe" tabindex="0">
+        					What shoe size did your grandfather wear?
+      					</li>
+      					<li class="mdc-list-item" role="option" id="vegetables" tabindex="0">
+        					What is your favorite vegetable?
+      					</li>
+      					<li class="mdc-list-item" role="option" id="school" tabindex="0">
+        					What was the first school you attended?
+      					</li>
+      					<li class="mdc-list-item" role="option" id="hat" tabindex="0">
+        					What size hat did your great-grandfather wear?
+      					</li>
+      				</ul>
+  				</div>
+			</div>
+			
+			<!-- CSS select from Google 
+		<select class="mdc-select">
+  			<option value="" selected>Security question 1</option>
+ 			<option value="FatherShoe">What shoe size did your grandfather wear?</option>
+  			<option value="vegetables">What is your favorite vegetable?</option>
+  			<option value="school">What was the first school you attended?</option>
+  			<option value="hat">What size hat did your great-grandfather wear?</option>
+		</select>
+			End CSS select from Google -->	
+		  
+		  
+			<div class="mdc-form-field">
+				<div class="mdc-text-field mdc-text-field--upgraded" data-mdc-auto-init="MDCTextField">
+			  		<input id="securityanswer1" type="text" class="mdc-text-field__input">
+					<label for="securityanswer1" class="mdc-text-field__label">
+						Your answer
+					</label>
+			  		<div class="mdc-text-field__bottom-line"></div>
+		    	</div>
+			</div>
+		 
+		  <p></p>
+			 
+<!-- Original version of security question			
+			<div class= "mdc-form-field">
+				<div class="mdc-textfield" data-mdc-auto-init="MDCTextfield">
+			  		<input id="securityquestion2" type="text" class= "mdc-textfield__input">
+					<label for="securityquestion2" class="mdc-textfield__label">
+						Security question 2
+					</label>
+			  		<div class="mdc-textfield__bottom-line"></div>
+		    	</div>
+			</div>
+-->
+			<!-- CSS select from Google 
+		<select class="mdc-select">
+  			<option value="" selected>Security question 2</option>
+ 			<option value="pet">What is your favorite pet?</option>
+  			<option value="vacation">Where do you like to go on vacation?</option>
+  			<option value="teacher">Who was your teacher in the third grade?</option>
+  			<option value="dog">What size dog did your great-grandfather have?</option>
+		</select>
+			End CSS select from Google -->	
+		  
+		  			<!-- Google select with mdc activation -->
+			
+			<div class="mdc-select" role="listbox" tabindex="0" data-mdc-auto-init="MDCSelect" style="width: 341px;">
+ 				 <span class="mdc-select__selected-text">Security question 2</span>
+ 				 <div class="mdc-simple-menu mdc-select__menu">
+    				<ul class="mdc-list mdc-simple-menu__items">
+      					<li class="mdc-list-item" role="option" id="default2" aria-disabled="true">
+        					Security question 2
+      					</li>
+      					<li class="mdc-list-item" role="option" id="pet" tabindex="0">
+        					What is your favorite pet?
+      					</li>
+      					<li class="mdc-list-item" role="option" id="vacation" tabindex="0">
+        					Where do you like to go on vacation?
+      					</li>
+      					<li class="mdc-list-item" role="option" id="teacher" tabindex="0">
+        					Who was your teacher in the third grade?
+      					</li>
+      					<li class="mdc-list-item" role="option" id="dog" tabindex="0">
+        					What size dog did your great-grandfather have?
+      					</li>
+      				</ul>
+  				</div>
+			</div>
+
+					
+			<div class="mdc-form-field">
+				<div class="mdc-text-field mdc-text-field--upgraded" data-mdc-auto-init="MDCTextField">
+			  		<input id="securityanswer2" type="text" class="mdc-text-field__input">
+					<label for="securityanswer2" class="mdc-text-field__label">
+						Your answer
+					</label>
+			  		<div class="mdc-text-field__bottom-line"></div>
+		    	</div>
+			</div>
+		
+			<p>			
+			</p><div class=".body1">Enter the last four digits of your SSN <strong>or</strong> your Premera ID number to verify your account with Premera.</div>
+			<p></p> 
+			
+			<div class="mdc-form-field">
+				<div class="mdc-text-field mdc-text-field--upgraded" data-mdc-auto-init="MDCTextField">
+			  		<input id="ssn4" type="text" class="mdc-text-field__input">
+					<label for="ssn4" class="mdc-text-field__label">
+						SSN (last 4 only)
+					</label>
+			  		<div class="mdc-text-field__bottom-line"></div>
+		    	</div>
+			</div>
+				
+			
+			<div class="mdc-form-field">
+				<div class="mdc-text-field mdc-text-field--upgraded" data-mdc-auto-init="MDCTextField">
+			  		<input id="IDnumber" type="text" class="mdc-text-field__input">
+					<label for="IDnumber" class="mdc-text-field__label">
+						ID number
+					</label>
+			  		<div class="mdc-text-field__bottom-line"></div>
+		    	</div>
+			</div> 
+			
+
+		<!--	<img src="file:///C|/Users/Jeff/Downloads/ID-card-PBCWA-blurred.png" alt="Premera ID Card" width="200" height="125"> disabling the card image for now. Goal is to place behind an icon -->
+		
+				
+						
+			<!-- Checkbox from Google - replaced with radio buttons -->
+		<p>
+			</p><div class="mdc-form-field">
+  				<div class="mdc-checkbox">
+    				<input type="checkbox" id="my-checkbox" class="mdc-checkbox__native-control">
+ 			   <div class="mdc-checkbox__background">
+  				    <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+ 				       <path class="mdc-checkbox__checkmark__path" fill="none" stroke="white" d="M1.73,12.91 8.1,19.28 22.79,4.59"></path>
+ 				     </svg>
+			      <div class="mdc-checkbox__mixedmark"></div>
+			    </div>
+			  </div>
+		
+ 				 <label for="my-checkbox" class="label">I want my explanation of benefits (EOB) notifications emailed. (Not available for Medicare Supplement Members)</label>
+				
+			</div>
+		<p></p>
+		
+		<!-- end of checkbox from Google -->
+<!-- Beginning of radio button set from Google. Note there is an alignment issue with the default Google code between the radio button and the associated label -->
+<!--
+			<div class="mdc-radio">
+ 			 <input class="mdc-radio__native-control" type="radio" id="radio-1" name="radios" checked>
+  				<div class="mdc-radio__background">
+   				 <div class="mdc-radio__outer-circle"></div>
+    			<div class="mdc-radio__inner-circle"></div>
+  				</div>
+			</div>
+		<label id="radio-1-label" for="radio-1">Email explanation of benefits (EOB) notifications. (Not available for Medicare Supplement Members)</label>
+						
+	<p></p>
+
+			<div class="mdc-radio">
+			  <input class="mdc-radio__native-control" type="radio" id="radio-2" name="radios">
+			  <div class="mdc-radio__background">
+  			  	<div class="mdc-radio__outer-circle"></div>
+   			 	<div class="mdc-radio__inner-circle"></div>
+ 			 </div>
+			</div>
+			<label id="radio-2-label" for="radio-2">Mail my Explanation of Benefits notifications.</label>	-->
+<!-- End of OOB Google radio button code -->
+
+		</div>
+	
+		<p>		  
+		  </p><div class=".body1">Creating an account signifies you agree to our Terms &amp; Conditions.</div>
+		 <p></p>
+		  		  
+		 <button type="cancel" class="mdc-button mdc-button--text mdc-ripple-surface mdc-ripple-upgraded" data-mdc-auto-init="MDCRipple" style="--mdc-ripple-fg-size:53.0344px; --mdc-ripple-fg-scale:1.98816;">
+		  Cancel
+		  </button>
+		  
+		  <button type="submit" class="mdc-button mdc-button--raised mdc-ripple-surface mdc-ripple-upgraded mdc-ripple-upgraded--background-focused" data-mdc-auto-init="MDCRipple" style="--mdc-ripple-fg-size:95.1094px; --mdc-ripple-fg-scale:1.81425; --mdc-ripple-fg-translate-start:64.1016px, -22.8984px; --mdc-ripple-fg-translate-end:31.7031px, -29.5547px;">
+		  Create account
+		  </button>
+
+	  </form>
+	  </div>
+	  <!-- The p element below is where we will eventually output our accountcreate -->
+	  <p class="mdc-typography--headline" id="accountcreate"></p>
+	  </main>
+	
+ <script src="./Account Creation_files/material-components-web.min.js.download"></script>
+	 <script type="text/javascript">window.mdc.autoInit();</script> <!-- got the updated syntax (type="text/javascript")for this script from https://github.com/material-components/material-components-web/tree/master/packages/mdc-auto-init-->
+	
+ 
+ 	 
+
+  
+
+</div></body></html>
